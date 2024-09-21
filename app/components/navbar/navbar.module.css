@@ -2,7 +2,7 @@
   display: flex;
   height: 70px;
   justify-content: center;
-  align-items: end;
+  align-items: flex-end;
   flex-direction: row;
   flex: 1;
   gap: 4px;
@@ -28,6 +28,7 @@
   align-items: center;
   background-color: var(--primary-blue);
   height: 80%;
+  transition: background-color 250ms ease-in-out;
 }
 .navlinkActive{
   background-color: var(--secondary-blue);
@@ -47,4 +48,20 @@
 .navlinkActive span {
   font-size: 40px;
   color: var(--primary-blue);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  a.navlink:hover{
+    background-color: var(--secondary-blue);
+  }
+  a.navlink:hover span{
+    color: var(--primary-blue);
+  }
+  a.navlinkActive:hover{
+    background-color: var(--primary-blue);
+  }
+  a.navlinkActive:hover span{
+    color: var(--secondary-blue);
+  }
+  
 }

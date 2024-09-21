@@ -33,7 +33,10 @@
   gap: 32px;
   grid-row-start: 2;
   height: calc(100svh - 140px);
-  padding: 40px 16px 0;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow-y: scroll;
+  padding: 40px 16px;
 }
 
 /* .main ol {

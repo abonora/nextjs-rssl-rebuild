@@ -13,7 +13,7 @@ const Navbar = () => {
                 <Link href="/" className={currentPath === "/" ? `${styles.navlinkActive} ${styles.navlink}` : styles.navlink}>
                     <span className="material-symbols-outlined">Home</span>
                 </Link>
-                <Link href="/teams" className={currentPath === "/teams" ? `${styles.navlinkActive} ${styles.navlink}` : styles.navlink}>
+                <Link href="/teams" className={currentPath.includes("/teams") ? `${styles.navlinkActive} ${styles.navlink}` : styles.navlink}>
                     <span className="material-symbols-outlined">Groups</span>
                 </Link>
                 <Link href="/standings" className={currentPath === "/standings" ? `${styles.navlinkActive} ${styles.navlink}` : styles.navlink}>
